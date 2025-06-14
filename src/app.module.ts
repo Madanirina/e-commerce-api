@@ -12,7 +12,7 @@ dotenv.config();
 
 @Module({
   imports: [
-    MongooseModule.forRoot('mongodb://localhost:27017/e-com'),
+    MongooseModule.forRoot(process.env.MONGO_URI),
     UserModule,
     AuthModule,
     ProductsModule,
