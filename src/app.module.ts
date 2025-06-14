@@ -6,6 +6,7 @@ import { ProductsModule } from './products/products.module';
 import { OrdersModule } from './orders/orders.module';
 import { CartModule } from './cart/cart.module';
 import { PaymentModule } from './payment/payment.module';
+import { CamundaModule } from './camunda/camunda.module';
 import * as dotenv from 'dotenv';
 
 dotenv.config();
@@ -19,6 +20,7 @@ dotenv.config();
     OrdersModule,
     CartModule,
     PaymentModule,
+    CamundaModule,
   ],
 })
 export class AppModule {}
