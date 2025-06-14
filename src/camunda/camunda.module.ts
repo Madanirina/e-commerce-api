@@ -1,9 +1,6 @@
 import { Module } from '@nestjs/common';
-import { CamundaService } from './camunda.service';
-import { CamundaController } from './camunda.controller';
-
+import { ZeebeService } from '../camunda/camunda.service'
 @Module({
-  controllers: [CamundaController],
-  providers: [CamundaService]
+  providers: [ZeebeService]
 })
 export class CamundaModule {}
